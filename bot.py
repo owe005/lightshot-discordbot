@@ -1,8 +1,6 @@
 import discord
 import random
 
-TOKEN = 'insert-your-discord-bot-token'
-
 client = discord.Client()
 
 @client.event
@@ -18,4 +16,4 @@ async def on_message(message):
         url = "https://prnt.sc/" + str(randomizing)
         await message.channel.send(url)
 
-client.run(TOKEN)
+client.run('insert-your-discord-bot-token')
