@@ -1,8 +1,13 @@
 import discord
+import random
 
 TOKEN = 'insert-your-discord-bot-token'
 
 client = discord.Client()
+
+@client.event
+async def on_ready():
+  print("Let's go")
 
 @client.event
 async def on_message(message):
